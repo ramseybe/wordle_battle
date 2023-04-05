@@ -36,9 +36,7 @@ guncontrol = st.select_slider(f"Test",[st.markdown(a, unsafe_allow_html=True),"N
 
 import streamlit as st
 
-values = st.slider(
-    'Select a range of values',
-    0.0, 100.0, (25.0, 75.0))
+values = st.slider('Select a range of values',[0.0, 100.0],label_visibility="hidden")
 st.write('Values:', values)
 option = st.selectbox("Name?",('Ben', 'Juuls'))
 
