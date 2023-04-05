@@ -28,6 +28,8 @@ a="""<!DOCTYPE html>
 
 components.html(a,width=300, height=700)
 
+b=st.slider(components.html(a,width=300, height=700),)
+
 
 option = st.selectbox("Name?",('Ben', 'Juuls'))
 
