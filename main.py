@@ -1,6 +1,8 @@
 import streamlit as st
 import pandas as pd
 import streamlit.components.v1 as components
+
+
 df_ben=pd.read_csv("ben_wordle.csv")
 df_juuls=pd.read_csv("juuls_wordle.csv")
 df=pd.merge(df_ben, df_juuls, on=["date","word"])
@@ -26,7 +28,7 @@ a="""<!DOCTYPE html>
 
 # st.write(HTML(a))
 
-components.html(a,width=300, height=700)
+#components.html(a,width=300, height=700)
 
 
 
