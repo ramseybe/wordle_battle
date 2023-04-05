@@ -18,5 +18,6 @@ if option == "Juuls":
   guess=0
   new_row = {'date': date, 'juuls_score': guess, 'word': ""}
   st.write(new_row)
+  df_juuls.loc[len(df_juuls)] = new_row
 elif option == "Ben":
   pass
