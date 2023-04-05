@@ -5,8 +5,7 @@ st.dataframe(df)
 date=st.date_input("Enter Date:")
 st.write(date)
 
-option = st.selectbox(
-    ('Ben', 'Juuls'))
+option = st.selectbox(('Ben', 'Juuls'))
 
 st.write('You selected:', option)
 
