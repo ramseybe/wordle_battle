@@ -16,7 +16,7 @@ st.write('You selected:', option)
 
 if option == "Juuls":
   guess=0
-  new_row = {'date': date, 'ben_score': guess, 'word': ""}
+  new_row = {'date': date, 'juuls_score': guess, 'word': ""}
   st.write(new_row)
 elif option == "Ben":
   pass
