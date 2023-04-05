@@ -34,7 +34,12 @@ a="""<!DOCTYPE html>
 
 guncontrol = st.select_slider(f"Test",[st.markdown(a, unsafe_allow_html=True),"Neutral","Anti"],value="Neutral")
 
+import streamlit as st
 
+values = st.slider(
+    'Select a range of values',
+    0.0, 100.0, (25.0, 75.0))
+st.write('Values:', values)
 option = st.selectbox("Name?",('Ben', 'Juuls'))
 
 st.write('You selected:', option)
