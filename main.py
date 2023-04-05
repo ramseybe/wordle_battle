@@ -1,8 +1,8 @@
 import streamlit as st
 import pandas as pd
-df_ben=pd.read_csv("wordle.csv")
-df_juuls=pd.read_csv("wordle.csv")
-df=pd.merge(df1, df2, on="date")
+df_ben=pd.read_csv("ben_wordle.csv")
+df_juuls=pd.read_csv("juuls_wordle.csv")
+df=pd.merge(df_ben, df_juuls, on="date")
 st.dataframe(df)
 st.write(df)
 date=st.date_input("Enter Date:")
