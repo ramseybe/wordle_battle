@@ -28,7 +28,9 @@ a="""<!DOCTYPE html>
 
 components.html(a,width=300, height=700)
 
-b=st.slider(components.html(a,width=300, height=700),)
+
+
+guncontrol = st.select_slider(f"{components.html(a,width=300, height=700)}",["Pro","Neutral","Anti"],value="Neutral")
 
 
 option = st.selectbox("Name?",('Ben', 'Juuls'))
